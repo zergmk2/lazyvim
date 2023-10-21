@@ -10,4 +10,12 @@ return {
       desc = "Explorer NeoTree (current file)",
     },
   },
+  config = function(_, _)
+    require("neo-tree").setup({
+      source_selector = {
+        winbar = true,
+        statusline = false,
+      },
+    })
+  end,
 }
