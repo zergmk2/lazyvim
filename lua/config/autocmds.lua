@@ -6,3 +6,11 @@ vim.api.nvim_create_autocmd("FileType", {
   desc = "terraform/hcl commentstring configuration",
   command = "setlocal nofoldenable",
 })
+
+-- Disable autoformat for java files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "java" },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})

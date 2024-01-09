@@ -1,0 +1,11 @@
+return {}
+-- file explorer
+-- return {
+--   "jmederosalvarado/roslyn.nvim",
+--   config = function(_, _)
+--     require("roslyn").setup({
+--       dotnet_cmd = "dotnet", -- this is the default
+--       roslyn_version = "4.8.0-3.23475.7", -- this is the default
+--     })
+--   end,
+-- }
